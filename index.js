@@ -2,7 +2,7 @@ const express = require('express');
 const fetchWebStories = require('./scrape');
 
 const app = express();
-const PORT = 3000;
+const PORT = 3060;
 
 app.get('/api/web-stories', async (req, res) => {
   const stories = await fetchWebStories();
